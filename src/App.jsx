@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import musicFile from "/src/audio/romantic.mp3"; // put music file here
 
 function App() {
   const sname = "Ankita";
@@ -33,13 +32,14 @@ function App() {
   ];
 
   const images = [
-    "/src/images/img1.jpg",
-    "/src/images/img2.jpg",
-    "/src/images/img5.jpg",
-    "/src/images/img6.jpg",
-    "/src/images/img4.jpg",
-    "/src/images/img3.jpg"
-  ];
+  "/love-ankita-valentine/images/img1.jpg",
+  "/love-ankita-valentine/images/img2.jpg",
+  "/love-ankita-valentine/images/img5.jpg",
+  "/love-ankita-valentine/images/img6.jpg",
+  "/love-ankita-valentine/images/img4.jpg",
+  "/love-ankita-valentine/images/img3.jpg"
+];
+
 
   const explodeHearts = (e) => {
     const newHearts = [];
@@ -59,8 +59,9 @@ function App() {
 
       {/* Background Music */}
       <audio autoPlay loop>
-        <source src={musicFile} type="audio/mp3" />
+        <source src="/love-ankita-valentine/audio/romantic.mp3" type="audio/mp3" />
       </audio>
+
 
       {/* Floating Background Hearts */}
       <div className="floating-hearts"></div>
